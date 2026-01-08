@@ -1,3 +1,6 @@
+import java.lang.String;
+import java.util.Arrays;
+
 public class VariablesAndArrays {
     /**
      * Reto 1: Declaración de una variable int.
@@ -6,11 +9,8 @@ public class VariablesAndArrays {
      * @return La variable con el int.
      */
     public int declareInt() {
-
-        // Tu código aquí
-
-        // Sustituye el 0 por tu variable ¡pero no borres el return!
-        return 0;
+      int age =30;
+      return age;
     }
 
     /**
@@ -20,11 +20,8 @@ public class VariablesAndArrays {
      * @return La variable con su boolean.
      */
     public boolean declareBoolean() {
-
-        // Tu código aquí
-
-        // Sustituye el false por tu variable
-        return false;
+        boolean isActive = true;
+        return isActive;
     }
 
     /**
@@ -34,12 +31,8 @@ public class VariablesAndArrays {
      * @return La variable 'initial'.
      */
     public char declareChar() {
-
-        // Tu código aquí
-
-
-        // Sustituye el espacio por tu variable
-        return ' ';
+        char initial ='J';
+        return initial;
     }
 
     /**
@@ -49,15 +42,16 @@ public class VariablesAndArrays {
      * @return El array 'names'.
      */
     public String[] declareStringArray() {
-
-        // Tu código aquí
-
-        // Sustituye new String[0] por la variable 'names'
-        return new String[0];
+       String[]names={"Ana","Luis","Marta"};
+       return names;
     }
 
 
     public static void main(String[] args) {
-        // Puedes hacer pruebas por aquí 🤖
+        VariablesAndArrays newVar = new VariablesAndArrays();
+        System.out.println("Resultado de int : "  + newVar.declareInt());
+        System.out.println("Resultado de boolean : " + newVar.declareBoolean());
+        System.out.println("Resultado de char : "  + newVar.declareChar());
+        System.out.println("Resultado de Array : " + Arrays.toString(newVar.declareStringArray()));
     }
 }
